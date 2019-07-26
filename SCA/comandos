@@ -1,0 +1,3 @@
+curl -Ns -H 'Content-Type: application/json' -X POST "http://146.148.126.185/generateEncryptedVoucher" --data '{"recipientName":"xxxx","drink":"water"}' | sed 's/DRINK VOUCHER/PGP MESSAGE/g' > voucher
+
+pgpdump voucher
